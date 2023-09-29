@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>js30-image-galery</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <div class="header__wrapper"></div>
+            <div class="header__wrapper">
+                <div class="header__title">
+                    <h1>Image galery</h1>
+                </div>
+                <div class="header__search">
+                    <form autocomplete="off">
+                        <input id="value" type="text" placeholder="Enter text" autofocus>
+                        <button id="submit" type="submit">Submit</button>
+                        <div class="header__search-close">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <div class="main__wrapper">
-            <div class="main__items">
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
-                <div class="main__items-item"></div>
+        <div class="wrapper">
+            <div class="main__wrapper">
+                <div class="main__items">
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                    <div class="main__items-item"><img src="img/pic.jpg" alt=""></div>
+                </div>
             </div>
         </div>
+
     </main>
     <script src="js/main.js"></script>
 </body>
