@@ -6,7 +6,7 @@ const formSubmit = document.getElementById('submit');
 const formCleanBtn = document.querySelector('.header__search-close');
 const itemsPic = document.querySelectorAll('.main__items-item img');
 const modal = document.querySelector('.modal');
-const modalPic = document.querySelector('.modal__pic > pic');
+const modalPic = document.querySelector('.modal__pic > img');
 const modalCloseBtn = document.querySelector('.modal__close')
 const overlay = document.querySelector('.overlay');
 
@@ -39,6 +39,13 @@ async function sendRequest() {
 
     } catch (error) {
         console.log(error)
+        for(let i = 0; i < itemsPic.length; i++) {
+            itemsPic[i].src = 'img/pic.jpg';
+            itemsPic[i].addEventListener('click', function() {
+                modalPic.src = 'img/pic.jpg';
+                openModal()
+            })
+        }
     }
 }
 sendRequest()
