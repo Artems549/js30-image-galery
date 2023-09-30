@@ -104,7 +104,8 @@ h1 {
 }
 .main__items-item img {
     width: 100%;
-    height: auto;
+    height: 270px;
+    object-fit: cover;
     transition: 0.2s linear;
     border-radius: 15px;
 }
