@@ -27,7 +27,6 @@ async function sendRequest() {
         const response = await fetch(url);
         const data = await response.json();
         if(response.ok) {
-            console.log(data)
             for(let i = 0; i < data.length; i++) {
                 itemsPic[i].src = data[i].urls.regular;
                 itemsPic[i].addEventListener('click', function() {
